@@ -3,7 +3,8 @@ import SingleJob from './SingleJob'
 
 function JobList() {
   return (
-    <div className='cardContainer'>
+    <div className='max-w-[75vw] bg-black text-white mx-auto my-[4rem]'>
+      <h1>Good Morning</h1>
       <SingleJob />
     </div>
   )
