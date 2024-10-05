@@ -1,9 +1,27 @@
-* {
+:root{
+  --light-grayish-cyan:hsl(180, 52%, 96%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+  --light-grayish-cyan-filter: hsl(180, 31%, 95%);
+  --dark-cyan:hsl(180, 29%, 50%);
+}
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: var(--light-grayish-cyan);
+}
+.bg-image {
+  background-image: url('./images/bg-header-desktop.svg');
+  background-repeat: no-repeat;
+  background-color: var(--dark-cyan);
+  background-size: cover;
+  height: 20vh;
+}
 
-.App {
-  background: url('./images/bg-header-desktop.svg');
+.cardContainer {
+  width: 80%;
 }
