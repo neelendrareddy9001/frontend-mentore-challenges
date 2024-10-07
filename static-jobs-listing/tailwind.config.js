@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-header': "url('./images/bg-header-desktop.svg')"
+        'header': "url('/src/images/bg-header-desktop.svg')"
       },
       colors: {
         darkCyan: "hsl(180, 29%, 50%)",
