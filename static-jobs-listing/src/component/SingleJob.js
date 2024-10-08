@@ -5,14 +5,14 @@ const SingleJob = () => {
   return (
     <>
       {data.map((item, key) => (
-        <div key={item.key} className="border-l-[3px] border-darkCyan">
+        <div key={item.key} className="border-l-[3px] border-darkCyan my-8 shadow-lg">
           <div>
-            <img src={item.logo} className='w-24 h-24 rounded-full' alt="" />
+            <img src={item.logo} className='h-16 w-16 rounded-full' alt="" />
           </div>
           <div>
             <div>
               <h3 className="text-darkCyan">{item.company}</h3>
-              <p></p>
+              <p>{item.level}</p>
               <p></p>
             </div>
             <div></div>
