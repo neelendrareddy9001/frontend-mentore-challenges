@@ -4,8 +4,8 @@ import data from "../db.json";
 const SingleJob = () => {
   return (
     <>
-      {data.map((item, key) => (
-        <div key={item.key} className="border-l-[3px] border-darkCyan my-8 shadow-lg">
+      {data.map((item) => (
+        <div key={item.id} className="border-l-[3px] border-darkCyan bg-white my-8 rounded-md">
           <div>
             <img src={item.logo} className='h-16 w-16 rounded-full' alt="" />
           </div>
