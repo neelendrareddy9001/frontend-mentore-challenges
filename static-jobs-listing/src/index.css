@@ -22,3 +22,19 @@ body {
 }
 
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  @apply bg-lightGrayishCyan px-6 rounded-md mr-4 p-[4px] text-darkCyan font-bold
+}
+
+h2 {
+  @apply text-darkCyan font-semibold
+}
+
+p {
+  @apply font-bold
+}
