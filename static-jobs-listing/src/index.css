@@ -38,3 +38,13 @@ h2 {
 p {
   @apply font-bold
 }
+
+.active {
+  @apply  rounded-md text-sm text-darkCyan bg-lightGrayishCyan
+}
+.active-p {
+  @apply p-[8px] font-bold px-2
+}
+.active-span {
+  @apply rounded-md rounded-tl-none rounded-bl-none p-[8px] px-3.5 bg-darkCyan text-white hover:bg-black font-medium
+}
