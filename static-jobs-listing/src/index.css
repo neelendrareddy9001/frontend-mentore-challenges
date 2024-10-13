@@ -28,11 +28,11 @@ img {
 }
 
 h3 {
-  @apply bg-lightGrayishCyan px-6 rounded-md mr-4 p-[4px] text-darkCyan font-bold
+  @apply bg-lightGrayishCyan px-6 rounded-md mr-4 p-[4px] text-darkCyan font-bold hover:bg-darkCyan hover:text-white cursor-pointer
 }
 
 h2 {
-  @apply text-darkCyan font-semibold
+  @apply text-darkCyan font-semibold 
 }
 
 p {
@@ -47,4 +47,8 @@ p {
 }
 .active-span {
   @apply rounded-md rounded-tl-none rounded-bl-none p-[8px] px-3.5 bg-darkCyan text-white hover:bg-black font-medium
+}
+
+.info {
+  @apply text-gray-400 font-[500]
 }
