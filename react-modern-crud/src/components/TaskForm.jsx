@@ -22,6 +22,11 @@ const TaskForm = ({setTasks}) => {
         setTasks((prev) => {
           return {...prev, taskData};
         })
+        setTaskData({
+          task: "",
+          status: "todo",
+          tags: [],
+        })
     }
 
     const checkTag = (tag) => {
@@ -57,20 +62,21 @@ const TaskForm = ({setTasks}) => {
         <input
           name="task"
           type="text"
+          value={taskData.task}
           className="task_input"
           placeholder="Enter your task"
-          onChange={handleChange}
+          onChange={handleTaskChange}
         />
 
         <div className="task_form_bottom_line">
           <div>
-            <Tag tagName="HTML" selectTag={selectTag} selected={checkTag("HTML")}/>
+            <Tag tagName="HTML" selectTag={selectTag} selected={checkTag("HTML")} onChange={handleStausChange}/>
             <Tag tagName="CSS" selectTag={selectTag} selected={checkTag("CSS")}/>
             <Tag tagName="Javascript" selectTag={selectTag} selected={checkTag("Javascript")}/>
             <Tag tagName="React" selectTag={selectTag} selected={checkTag("React")}/>
           </div>
           <div>
-            <select className="task_status" onChange={handleChange} name="status">
+            <select className="task_status" onChange={handleChange} name="status" value={taskData.status}>
               <option value="todo">To do</option>
               <option value="doing">Doing</option>
               <option value="done">Done</option>
