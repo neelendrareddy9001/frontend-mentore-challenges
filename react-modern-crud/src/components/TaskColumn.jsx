@@ -10,7 +10,7 @@ const TaskColumn = (props) => {
       <h2 className="task_column_heding">
         <img className="tsk_column_icon" src={icon} alt="" /> {title}
       </h2>
-      <TaskCard />
+    
     </section>
   );
 };
