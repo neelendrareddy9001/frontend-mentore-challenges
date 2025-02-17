@@ -1,6 +1,5 @@
 import React from "react";
 import data from "../db.json";
-
 const SingleJob = () => {
   const handleClick = (e) => {
     console.log(e.target.value);
