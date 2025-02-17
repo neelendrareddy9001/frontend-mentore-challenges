@@ -3,16 +3,13 @@ import data from "../db.json";
 
 const SingleJob = () => {
   const handleClick = (e) => {
-    console.log(e.target.value)
-  }
+    console.log(e.target.value);
+  };
   return (
     <>
-      {data.map((item) => (
-        <div
-          key={item.id}
-          className="border-l-[3px] border-darkCyan p-8 bg-white my-8 rounded-md flex justify-between items-center"
-        >
-          <div className="flex">
+      {data.map((item, index) => (
+        <div className="border-l-[3px] border-darkCyan p-8 bg-white my-8 rounded-md flex justify-between items-center">
+          <div className="flex" key={index}>
             <img src={item.logo} className="h-16 w-16 rounded-full" alt="job" />
             <div className="flex flex-col gap-[4px]">
               <div className="flex gap-3">
@@ -26,7 +23,7 @@ const SingleJob = () => {
                   </p>
                 </div>
               </div>
-              <p className='cursor-pointer'>{item.position}</p>
+              <p className="cursor-pointer">{item.position}</p>
               <div className="flex gap-2 text-sm font-thin">
                 <p className="info">{item.postedAt}</p>
                 <span className="text-veryDarkGrayCyan text-lg text-center">
