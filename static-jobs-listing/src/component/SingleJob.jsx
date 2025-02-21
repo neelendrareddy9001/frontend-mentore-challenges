@@ -1,6 +1,6 @@
 import React from "react";
-import data from "../db.json";
-const SingleJob = () => {
+
+const SingleJob = ({ data }) => {
   const handleClick = (e) => {
     console.log(e.target.value);
   };
@@ -8,12 +8,22 @@ const SingleJob = () => {
   return (
     <>
       {data.map((item, index) => (
-        <div className="border-l-[3px] border-darkCyan p-8 bg-white my-8 rounded-md flex justify-between items-center">
-          <div className="flex" key={index}>
-            <img src={item.logo} className="h-16 w-16 rounded-full" alt="job" />
+        <div
+          className="border-l-[3px] border-darkCyan p-8 bg-white my-8 rounded-md flex justify-between items-center"
+          key={index}
+        >
+          <div className="flex">
+            <img
+              src={item.logo}
+              key={item.index}
+              className="h-16 w-16 rounded-full"
+              alt="job"
+            />
             <div className="flex flex-col gap-[4px]">
               <div className="flex gap-3">
-                <h2 className="text-darkCyan font-bold">{item.company}</h2>
+                <h2 className="text-darkCyan font-bold" key={item.index}>
+                  {item.company}
+                </h2>
                 <div className="flex gap-2">
                   <p
                     className={`${
