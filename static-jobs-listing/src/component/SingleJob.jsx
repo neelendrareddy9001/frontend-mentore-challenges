@@ -4,6 +4,7 @@ const SingleJob = () => {
   const handleClick = (e) => {
     console.log(e.target.value);
   };
+
   return (
     <>
       {data.map((item, index) => (
@@ -14,10 +15,22 @@ const SingleJob = () => {
               <div className="flex gap-3">
                 <h2 className="text-darkCyan font-bold">{item.company}</h2>
                 <div className="flex gap-2">
-                  <p className=" text-white bg-darkCyan px-2 p-[2px] rounded-full font-[500]">
+                  <p
+                    className={`${
+                      item.new
+                        ? "text-white bg-darkCyan px-2 p-[2px] rounded-full"
+                        : ""
+                    }`}
+                  >
                     {item.new ? "NEW!" : ""}
                   </p>
-                  <p className="text-white bg-black px-2 p-[2px] rounded-full font-[500]">
+                  <p
+                    className={`${
+                      item.featured
+                        ? "text-white bg-black px-2 p-[2px] rounded-full "
+                        : ""
+                    }`}
+                  >
                     {item.featured ? "FEATURED" : ""}
                   </p>
                 </div>

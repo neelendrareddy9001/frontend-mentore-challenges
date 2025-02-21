@@ -1,13 +1,16 @@
 import React from "react";
+import dataDB from "../db.json";
 
 const handleJobSelect = (e) => {
   e.preventDefault();
 };
 
+const handleClear = (e) => {};
+
 const ActiveState = () => {
   return (
     <div className="max-w-[75vw] left-[12%] my-[4.5rem] absolute top-[2.5%] w-full rounded-md px-8 py-4 bg-white flex justify-between items-center">
-      <div className="flex gap-4">
+      <div className="flex gap-4 cursor-pointer">
         <div className="active flex gap-2">
           <p className="active-p">hello</p>
           <span className="active-span">
@@ -21,8 +24,10 @@ const ActiveState = () => {
           </span>
         </div>
       </div>
-
-      <button className="text-darkCyan capitalize font-medium hover:underline">
+      <button
+        className="text-darkCyan capitalize font-medium hover:underline"
+        onClick={handleClear}
+      >
         clear
       </button>
     </div>
