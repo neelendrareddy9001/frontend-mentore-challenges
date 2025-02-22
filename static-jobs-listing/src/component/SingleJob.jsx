@@ -2,7 +2,7 @@ import React from "react";
 
 const SingleJob = ({ data }) => {
   const handleClick = (e) => {
-    console.log(e.target.value);
+    console.log("clicked");
   };
 
   return (
@@ -61,7 +61,7 @@ const SingleJob = ({ data }) => {
           </div>
 
           <div className="flex items-center justify-evenly">
-            <h3 onClick={handleClick}>{item.role}</h3>
+            <h3>{item.role}</h3>
             <h3>{item.level}</h3>
             {item.languages.map((it) => (
               <h3>{it}</h3>
