@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import dataDB from "../db.json";
 
 const ActiveState = () => {
-  const [jobArr, setJobArr] = useState([]);
+  const [jobArr, setJobArr] = useState(dataDB);
   const handleClear = (e) => {
     e.preventDefault();
   };
