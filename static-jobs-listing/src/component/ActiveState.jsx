@@ -17,7 +17,7 @@ const ActiveState = () => {
             <div className="max-w-[75vw] left-[12%] my-[4.5rem] absolute top-[2.5%] w-full rounded-md px-8 py-4 bg-white flex justify-between items-center">
               <div className="flex gap-4 cursor-pointer">
                 <div className="active flex gap-2">
-                  <p className="active-p">{item.languages.map()}</p>
+                  <p className="active-p"></p>
                   <span className="active-span">
                     <i
                       className="fa-solid fa-xmark"
